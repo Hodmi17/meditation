@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+  
+}
+/* section{
+  background-image: url("salah.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+.flex-container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+      background: rgba(10, 11, 11, 0.529);
+}
+
+.logo {
+  margin: 0 0 0 .45em;
+}
+    .logo a {
+      color: rgb(28, 24, 22);
+    }
+
+    .logo, .navigation {
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    .logo a, .navigation a {
+        text-decoration: none;
+        letter-spacing: .45rem;
+    }
+
+.navigation  {
+  display: flex;
+}
+
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+    background: #00ace6;
+}
+/* section{
+  background-image: url(salah.jpeg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+} */
+
+@media all and (max-width: 950px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: 0;
+}
+  
+  .navigation  {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+ 
+  .logo {
+    margin: .25em 0;
+    align-self: left; 
+}
+  
+  .navigation {
+    flex-direction: column;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
